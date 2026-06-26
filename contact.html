@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Nexus - Reach out to our technical support, sales, or partnership teams. We are available 24/7.">
+  <title>Contact Us - Nexus Systems</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="navbar-brand-text">NEXUS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="navHome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="navAbout">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" id="navServices">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" id="navBlog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html" id="navContact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="contact.html" class="btn btn-custom btn-gradient">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header-wrapper text-center">
+    <div class="container">
+      <h1 class="display-4 fw-extrabold mb-3">Connect With <span class="text-gradient">Our Team</span></h1>
+      <p class="lead text-muted max-width-md mx-auto" style="max-width: 600px;">Have questions about pricing, API capacities, or custom integrations? Drop us a line.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row g-5">
+        
+        <!-- Contact Info & Map (Left Column) -->
+        <div class="col-lg-5">
+          <h2 class="h3 mb-4">Contact Information</h2>
+          <p class="text-muted mb-5">Our technical operations and sales teams stand ready to support your workflows 24 hours a day, 7 days a week.</p>
+          
+          <!-- Info 1: Office -->
+          <div class="contact-info-box">
+            <div class="contact-info-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div>
+              <h3 class="contact-info-title">Headquarters</h3>
+              <p class="contact-info-text">100 Pine Street, Floor 17<br>San Francisco, CA 94111</p>
+            </div>
+          </div>
+
+          <!-- Info 2: Phone -->
+          <div class="contact-info-box">
+            <div class="contact-info-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div>
+              <h3 class="contact-info-title">Phone Number</h3>
+              <p class="contact-info-text">+1 (555) 739-2810</p>
+            </div>
+          </div>
+
+          <!-- Info 3: Email -->
+          <div class="contact-info-box">
+            <div class="contact-info-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <h3 class="contact-info-title">Email Address</h3>
+              <p class="contact-info-text">support@nexusoperations.com</p>
+            </div>
+          </div>
+
+          <!-- Info 4: Business Hours -->
+          <div class="contact-info-box">
+            <div class="contact-info-icon">
+              <i class="bi bi-clock"></i>
+            </div>
+            <div>
+              <h3 class="contact-info-title">Business Hours</h3>
+              <p class="contact-info-text">Monday - Friday: 8:00 AM - 6:00 PM PST<br>Support Team: 24/7 Active</p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="mt-4 pt-3">
+            <h4 class="h6 mb-3 text-white-50 text-uppercase" style="letter-spacing: 0.05em;">Follow Us</h4>
+            <div class="d-flex">
+              <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          
+          <!-- Map Section -->
+          <div class="map-container">
+            <div class="map-placeholder">
+              <div class="map-grid-bg"></div>
+              <div class="map-content">
+                <i class="bi bi-geo-alt-fill map-icon"></i>
+                <h4 class="h5 mb-2 text-white">Office HQ Map</h4>
+                <p class="text-muted small mb-0">100 Pine Street, San Francisco, CA</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Contact Form (Right Column) -->
+        <div class="col-lg-7">
+          <div class="glass-card">
+            <h2 class="h3 mb-4">Send Us a Message</h2>
+            
+            <!-- Alert container for validation/submit status -->
+            <div id="formResponse" class="mb-4"></div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+                </div>
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="john@example.com" required>
+                </div>
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label">Phone Number (Optional)</label>
+                  <input type="tel" class="form-control" id="contactPhone" placeholder="+1 (555) 000-0000">
+                </div>
+                <!-- Subject -->
+                <div class="col-md-6">
+                  <label for="contactSubject" class="form-label">Subject *</label>
+                  <input type="text" class="form-control" id="contactSubject" placeholder="Pricing inquiry / Integration help" required>
+                </div>
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label">Message *</label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us how we can help your operations..." required></textarea>
+                </div>
+                <!-- Submit -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-custom btn-gradient w-100 py-3">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo">NEXUS</div>
+          <p class="footer-desc">AI-powered workflow orchestration and integration infrastructure for hyper-growth technology companies.</p>
+          <div class="d-flex">
+            <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 offset-lg-1">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="index.html#testimonialCarousel">Testimonials</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Cloud Native Integrations</a></li>
+            <li><a href="services.html">AI Flow Orchestration</a></li>
+            <li><a href="services.html">Predictive Analytics</a></li>
+            <li><a href="services.html#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="text-muted mb-3">Get the latest technology insights sent directly to your inbox.</p>
+          <form class="newsletter-form d-flex">
+            <input type="email" class="form-control" placeholder="Email Address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2026 Nexus Systems Inc. All rights reserved.</p>
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <a href="#" class="text-muted">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short" style="font-size: 1.5rem; line-height: 1;"></i>
+  </a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

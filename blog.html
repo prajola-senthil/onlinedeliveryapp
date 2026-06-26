@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexus Insights - Stay updated on cloud architecture, automation trends, SaaS security, and artificial intelligence integration guidelines.">
+  <title>Nexus Insights - Tech Blog & Startup Guides</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="navbar-brand-text">NEXUS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="navHome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="navAbout">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" id="navServices">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blog.html" id="navBlog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" id="navContact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="contact.html" class="btn btn-custom btn-gradient">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header-wrapper text-center">
+    <div class="container">
+      <h1 class="display-4 fw-extrabold mb-3">Nexus <span class="text-gradient">Insights</span></h1>
+      <p class="lead text-muted max-width-md mx-auto" style="max-width: 600px;">Stay up-to-date with cloud-native engineering, cybersecurity, and automation architectures.</p>
+    </div>
+  </header>
+
+  <!-- Blog Layout -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row g-4">
+        
+        <!-- Blog Posts Main (Left) -->
+        <div class="col-lg-8">
+          
+          <!-- Featured Post Card -->
+          <div class="blog-post-card featured-post mb-5" data-category="announcements" data-tags="ai,announcement,platform">
+            <div class="glass-card p-0 overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5" style="position: relative;">
+                  <img src="images/hero_dashboard.png" alt="Featured Post: Nexus AI v2.0 Dashboard" style="width: 100%; height: 100%; object-fit: cover; min-height: 250px;">
+                  <span class="blog-badge">Featured</span>
+                </div>
+                <div class="col-md-7">
+                  <div class="p-4 d-flex flex-column h-100 justify-content-between">
+                    <div>
+                      <div class="blog-meta">
+                        <span><i class="bi bi-calendar3"></i> June 22, 2026</span>
+                        <span><i class="bi bi-tag-fill"></i> Announcements</span>
+                      </div>
+                      <h2 class="h3 blog-title"><a href="#">The Future of Autonomous Operations: Nexus AI v2.0</a></h2>
+                      <p class="text-muted small">We are thrilled to roll out Nexus AI Engines, introducing conversational pipelines, natural language compilers, and advanced SOC2 compliance safeguards to modern startups.</p>
+                    </div>
+                    <div class="blog-author-box mt-3">
+                      <img src="images/team_sarah.png" alt="Sarah Jenkins" class="blog-author-avatar">
+                      <span class="blog-author-name">Sarah Jenkins (CEO)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Cards Grid -->
+          <div class="row g-4" id="blogGrid">
+            <!-- Article 1 -->
+            <div class="col-md-6 blog-post-card" data-category="infrastructure" data-tags="serverless,scaling,cloud">
+              <div class="blog-card">
+                <div class="blog-img-wrapper">
+                  <img src="images/blog_1.png" alt="Network wires and connectors illustration" class="blog-img">
+                  <span class="blog-badge">Infrastructure</span>
+                </div>
+                <div class="blog-card-body">
+                  <div class="blog-meta">
+                    <span><i class="bi bi-calendar3"></i> June 15, 2026</span>
+                    <span><i class="bi bi-clock"></i> 5 min read</span>
+                  </div>
+                  <h3 class="blog-title"><a href="#">Scaling Microservices with Serverless Orchestration</a></h3>
+                  <p class="blog-excerpt">Learn how to build resilient cloud microservices by implementing serverless workflows and handling API rate limit anomalies dynamically.</p>
+                  <div class="blog-author-box">
+                    <img src="images/team_sarah.png" alt="Sarah Jenkins" class="blog-author-avatar">
+                    <span class="blog-author-name">Sarah Jenkins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-6 blog-post-card" data-category="artificial intelligence" data-tags="ai,automation,agents">
+              <div class="blog-card">
+                <div class="blog-img-wrapper">
+                  <img src="images/blog_2.png" alt="Abstract gradient nodes representing artificial intelligence" class="blog-img">
+                  <span class="blog-badge">AI</span>
+                </div>
+                <div class="blog-card-body">
+                  <div class="blog-meta">
+                    <span><i class="bi bi-calendar3"></i> May 28, 2026</span>
+                    <span><i class="bi bi-clock"></i> 7 min read</span>
+                  </div>
+                  <h3 class="blog-title"><a href="#">How AI Agents are Redefining Support Workflows</a></h3>
+                  <p class="blog-excerpt">An in-depth look at using natural language prompts to deploy autonomous operations agents that resolve tickets and queries.</p>
+                  <div class="blog-author-box">
+                    <img src="images/team_sophia.png" alt="Sophia Alvarez" class="blog-author-avatar">
+                    <span class="blog-author-name">Sophia Alvarez</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-6 blog-post-card" data-category="security" data-tags="cybersecurity,soc2,apis">
+              <div class="blog-card">
+                <div class="blog-img-wrapper">
+                  <img src="images/blog_3.png" alt="Security abstract visual background matrix" class="blog-img">
+                  <span class="blog-badge">Security</span>
+                </div>
+                <div class="blog-card-body">
+                  <div class="blog-meta">
+                    <span><i class="bi bi-calendar3"></i> April 12, 2026</span>
+                    <span><i class="bi bi-clock"></i> 4 min read</span>
+                  </div>
+                  <h3 class="blog-title"><a href="#">Best Security Practices for SaaS API Integrations</a></h3>
+                  <p class="blog-excerpt">Protecting sensitive databases doesn't have to be difficult. Check out our SOC2 handbook on variable encryption and key rotations.</p>
+                  <div class="blog-author-box">
+                    <img src="images/team_david.png" alt="David Chen" class="blog-author-avatar">
+                    <span class="blog-author-name">David Chen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="col-md-6 blog-post-card" data-category="infrastructure" data-tags="databases,latency,multi-region">
+              <div class="blog-card">
+                <div class="blog-img-wrapper">
+                  <img src="images/blog_4.png" alt="Server clusters data network layout" class="blog-img">
+                  <span class="blog-badge">Infrastructure</span>
+                </div>
+                <div class="blog-card-body">
+                  <div class="blog-meta">
+                    <span><i class="bi bi-calendar3"></i> March 24, 2026</span>
+                    <span><i class="bi bi-clock"></i> 6 min read</span>
+                  </div>
+                  <h3 class="blog-title"><a href="#">Connecting Multi-Region Databases with Low Latency</a></h3>
+                  <p class="blog-excerpt">Review database synchronization speeds, and learn how cached nodes in routing engines decrease query latency under 10ms.</p>
+                  <div class="blog-author-box">
+                    <img src="images/team_david.png" alt="David Chen" class="blog-author-avatar">
+                    <span class="blog-author-name">David Chen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Blog pagination" class="mt-5">
+            <ul class="pagination pagination-custom justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <!-- Sidebar Widgets (Right) -->
+        <div class="col-lg-4">
+          
+          <!-- Search Widget -->
+          <div class="blog-sidebar-widget search-widget">
+            <h4 class="blog-sidebar-title">Search Articles</h4>
+            <div class="position-relative">
+              <input type="text" class="form-control" placeholder="Search insights..." id="blogSearch">
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="blog-sidebar-widget">
+            <h4 class="blog-sidebar-title">Categories</h4>
+            <div class="d-flex flex-column">
+              <a href="#" class="category-list-link active" data-filter="all">All Categories <span class="category-count">5</span></a>
+              <a href="#" class="category-list-link" data-filter="infrastructure">Infrastructure <span class="category-count">2</span></a>
+              <a href="#" class="category-list-link" data-filter="artificial intelligence">Artificial Intelligence <span class="category-count">1</span></a>
+              <a href="#" class="category-list-link" data-filter="security">Security <span class="category-count">1</span></a>
+              <a href="#" class="category-list-link" data-filter="announcements">Announcements <span class="category-count">1</span></a>
+            </div>
+          </div>
+
+          <!-- Recent Posts Widget -->
+          <div class="blog-sidebar-widget">
+            <h4 class="blog-sidebar-title">Recent Posts</h4>
+            
+            <div class="recent-post-item">
+              <img src="images/hero_dashboard.png" alt="SaaS dashboard cover thumbnail" class="recent-post-thumb">
+              <div>
+                <h5 class="recent-post-title"><a href="#">Autonomous Operations: Nexus AI v2.0</a></h5>
+                <span class="recent-post-date">June 22, 2026</span>
+              </div>
+            </div>
+
+            <div class="recent-post-item">
+              <img src="images/blog_1.png" alt="Technology network thumbnail" class="recent-post-thumb">
+              <div>
+                <h5 class="recent-post-title"><a href="#">Scaling Microservices with Serverless</a></h5>
+                <span class="recent-post-date">June 15, 2026</span>
+              </div>
+            </div>
+
+            <div class="recent-post-item">
+              <img src="images/blog_2.png" alt="Collaborative corporate thumbnail" class="recent-post-thumb">
+              <div>
+                <h5 class="recent-post-title"><a href="#">How AI Agents are Redefining Support</a></h5>
+                <span class="recent-post-date">May 28, 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Tags Widget -->
+          <div class="blog-sidebar-widget">
+            <h4 class="blog-sidebar-title">Popular Tags</h4>
+            <div class="tag-cloud">
+              <a href="#" class="tag-link" data-filter="ai">#ai</a>
+              <a href="#" class="tag-link" data-filter="serverless">#serverless</a>
+              <a href="#" class="tag-link" data-filter="soc2">#soc2</a>
+              <a href="#" class="tag-link" data-filter="cloud">#cloud</a>
+              <a href="#" class="tag-link" data-filter="cybersecurity">#cybersecurity</a>
+              <a href="#" class="tag-link" data-filter="databases">#databases</a>
+              <a href="#" class="tag-link" data-filter="automation">#automation</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-logo">NEXUS</div>
+          <p class="footer-desc">AI-powered workflow orchestration and integration infrastructure for hyper-growth technology companies.</p>
+          <div class="d-flex">
+            <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 offset-lg-1">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="index.html#testimonialCarousel">Testimonials</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Cloud Native Integrations</a></li>
+            <li><a href="services.html">AI Flow Orchestration</a></li>
+            <li><a href="services.html">Predictive Analytics</a></li>
+            <li><a href="services.html#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="text-muted mb-3">Get the latest technology insights sent directly to your inbox.</p>
+          <form class="newsletter-form d-flex">
+            <input type="email" class="form-control" placeholder="Email Address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2026 Nexus Systems Inc. All rights reserved.</p>
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <a href="#" class="text-muted">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short" style="font-size: 1.5rem; line-height: 1;"></i>
+  </a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
